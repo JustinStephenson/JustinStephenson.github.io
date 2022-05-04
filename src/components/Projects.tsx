@@ -1,9 +1,45 @@
 import { ProjectBlock, ProjectBlockProps } from './ProjectBlock';
+import steamAppImg from '../images/StreamApp.png';
 import cropShopImg from '../images/CropShopPhone.png';
 import primDefenseImg from '../images/PrimeDefensePhone.png';
 import aerialInvastionImg from '../images/AreialInvasionPhone.png';
+import reduxImg from '../images/Redux.png';
 import unityImg from '../images/Unity.png';
 import React from 'react';
+
+const streamApp: ProjectBlockProps = {
+	mainImg: steamAppImg,
+	title: 'Streaming App',
+	description: 'Stream any application to this streaming service easily',
+	links: [
+		{
+			title: 'Github Link',
+			href: 'https://github.com/JustinStephenson/Streaming_App',
+		},
+	],
+	icons: [
+		{
+			isImg: false,
+			location: 'devicon-react-original colored',
+		},
+		{
+			isImg: true,
+			location: reduxImg,
+		},
+		{
+			isImg: false,
+			location: 'devicon-javascript-plain colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-html5-plain-wordmark colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-css3-plain-wordmark colored',
+		},
+	],
+};
 
 const cropShop: ProjectBlockProps = {
 	mainImg: cropShopImg,
@@ -88,6 +124,7 @@ const aerialInvasion: ProjectBlockProps = {
 export const Projects = (): JSX.Element => {
 	return (
 		<React.Fragment>
+			<ProjectBlock {...streamApp} />
 			<ProjectBlock {...cropShop} />
 			<ProjectBlock {...primeDefence} />
 			<ProjectBlock {...aerialInvasion} />

@@ -37,7 +37,10 @@ export const ProjectBlock = (props: ProjectBlockProps): JSX.Element => {
 			return (
 				<div key={icon.location}>
 					{icon.isImg ? (
-						<img src={icon.location} />
+						<img
+							src={icon.location}
+							style={{ paddingLeft: 15, paddingRight: 15 }}
+						/>
 					) : (
 						<i className={icon.location}></i>
 					)}
