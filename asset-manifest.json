@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f652ec3b.css",
-    "main.js": "/static/js/main.edc30a64.js",
+    "main.css": "/static/css/main.f24bdbdd.css",
+    "main.js": "/static/js/main.d2e7efad.js",
     "static/media/CropShopPhone.png": "/static/media/CropShopPhone.6e0286f21dd749895a53.png",
     "static/media/PrimeDefensePhone.png": "/static/media/PrimeDefensePhone.64fdaee7944bbe4d4be9.png",
     "static/media/AreialInvasionPhone.png": "/static/media/AreialInvasionPhone.60e8dfd76418065e53b7.png",
-    "static/media/StreamApp.png": "/static/media/StreamApp.f9da5383b84c4902dae2.png",
+    "static/media/StreamApp.png": "/static/media/StreamApp.0ac9b876a07a98d92216.png",
     "index.html": "/index.html",
-    "main.f652ec3b.css.map": "/static/css/main.f652ec3b.css.map",
-    "main.edc30a64.js.map": "/static/js/main.edc30a64.js.map"
+    "main.f24bdbdd.css.map": "/static/css/main.f24bdbdd.css.map",
+    "main.d2e7efad.js.map": "/static/js/main.d2e7efad.js.map"
   },
   "entrypoints": [
-    "static/css/main.f652ec3b.css",
-    "static/js/main.edc30a64.js"
+    "static/css/main.f24bdbdd.css",
+    "static/js/main.d2e7efad.js"
   ]
 }
