@@ -56,7 +56,7 @@ export const ProjectBlock = (props: ProjectBlockProps): JSX.Element => {
 					<div className="col-xs-12 col-md-8">
 						<img src={props.mainImg} />
 					</div>
-					<div className="col-xs-12 col-md-4" style={{ padding: '10px' }}>
+					<div className="col-xs-12 col-md-4 descriptions">
 						<h2>{props.title}</h2>
 						<p>{props.description}</p>
 						{renderLinks(props.links)}
@@ -64,7 +64,9 @@ export const ProjectBlock = (props: ProjectBlockProps): JSX.Element => {
 				</div>
 				<div className="row text-center techUsed">
 					<div className="col-xs-12">
-						<div className="horizontal-list">{renderIcons(props.icons)}</div>
+						<div className="horizontal-list media-list">
+							{renderIcons(props.icons)}
+						</div>
 					</div>
 				</div>
 			</div>
