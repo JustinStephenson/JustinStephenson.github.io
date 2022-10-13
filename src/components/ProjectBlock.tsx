@@ -39,6 +39,7 @@ export const ProjectBlock = (props: ProjectBlockProps): JSX.Element => {
 					{icon.isImg ? (
 						<img
 							src={icon.location}
+							alt="location"
 							style={{ paddingLeft: 15, paddingRight: 15 }}
 						/>
 					) : (
@@ -54,7 +55,7 @@ export const ProjectBlock = (props: ProjectBlockProps): JSX.Element => {
 			<div className="col-sm-8 col-sm-offset-2">
 				<div className="row vertical-align">
 					<div className="col-xs-12 col-md-8">
-						<img src={props.mainImg} />
+						<img src={props.mainImg} alt="main" />
 					</div>
 					<div className="col-xs-12 col-md-4 descriptions">
 						<h2>{props.title}</h2>
