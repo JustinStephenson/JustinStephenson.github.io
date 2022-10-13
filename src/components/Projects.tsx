@@ -2,7 +2,7 @@ import { ProjectBlock, ProjectBlockProps } from './ProjectBlock';
 import steamAppImg from '../images/StreamApp.png';
 import cropShopImg from '../images/CropShopPhone.png';
 import primDefenseImg from '../images/PrimeDefensePhone.png';
-import aerialInvastionImg from '../images/AreialInvasionPhone.png';
+import aerialInvasionImg from '../images/AreialInvasionPhone.png';
 import reduxImg from '../images/Redux.png';
 import unityImg from '../images/Unity.png';
 import React from 'react';
@@ -65,9 +65,9 @@ const cropShop: ProjectBlockProps = {
 	],
 };
 
-const primeDefence: ProjectBlockProps = {
+const primeDefense: ProjectBlockProps = {
 	mainImg: primDefenseImg,
-	title: 'Prime Defence',
+	title: 'Prime Defense',
 	description:
 		'Shoot candies falling from the skies with your cannon. ' +
 		'Get the highest score on the leader boards and show off your skills.',
@@ -94,7 +94,7 @@ const primeDefence: ProjectBlockProps = {
 };
 
 const aerialInvasion: ProjectBlockProps = {
-	mainImg: aerialInvastionImg,
+	mainImg: aerialInvasionImg,
 	title: 'Aerial Invasion',
 	description:
 		'Prepare to fight off hordes of balloons and blimps by gunning them down ' +
@@ -126,7 +126,7 @@ export const Projects = (): JSX.Element => {
 		<React.Fragment>
 			<ProjectBlock {...streamApp} />
 			<ProjectBlock {...cropShop} />
-			<ProjectBlock {...primeDefence} />
+			<ProjectBlock {...primeDefense} />
 			<ProjectBlock {...aerialInvasion} />
 		</React.Fragment>
 	);
