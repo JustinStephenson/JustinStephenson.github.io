@@ -1,5 +1,5 @@
 import resumeImg from '../images/Resume.png';
-import linkdinImg from '../images/Linkeden.png';
+import linkedinImg from '../images/Linkeden.png';
 import '../App.css';
 
 interface HeaderProps {
@@ -13,12 +13,12 @@ export const Header = (props: HeaderProps): JSX.Element => {
 				className="profile-pic"
 				width={300}
 				src="https://avatars0.githubusercontent.com/u/31748422?v&#x3D;4"
-				alt="Profile Picture"
+				alt="Profile"
 			/>
 			<div style={{ marginTop: '15px' }}>
 				<h1>Justin Stephenson</h1>
 				<h3>Toronto, Canada</h3>
-				<h5>Recently completed BSc in Computer Science</h5>
+				<h5>Currently working at Univeris as a software developer</h5>
 			</div>
 
 			<div className="text-center">
@@ -41,14 +41,14 @@ export const Header = (props: HeaderProps): JSX.Element => {
 						href="Justin Stephenson Resume.pdf"
 						target="blank"
 					>
-						<img src={resumeImg} />
+						<img src={resumeImg} alt="Resume" />
 					</a>
 					<a
 						className="image-hover"
 						href="https://www.linkedin.com/in/justin-stephenson-940572b0"
 						target="blank"
 					>
-						<img src={linkdinImg} />
+						<img src={linkedinImg} alt="Linkedin" />
 					</a>
 				</div>
 			</div>
