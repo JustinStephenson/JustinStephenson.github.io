@@ -1,5 +1,5 @@
 import { ProjectBlock, ProjectBlockProps } from './ProjectBlock';
-import steamAppImg from '../images/StreamApp.png';
+import pokemonDashboardImg from '../images/PokemonDashboard.png';
 import cropShopImg from '../images/CropShopPhone.png';
 import primDefenseImg from '../images/PrimeDefensePhone.png';
 import aerialInvasionImg from '../images/AreialInvasionPhone.png';
@@ -7,14 +7,21 @@ import reduxImg from '../images/Redux.png';
 import unityImg from '../images/Unity.png';
 import React from 'react';
 
-const streamApp: ProjectBlockProps = {
-	mainImg: steamAppImg,
-	title: 'Streaming App',
-	description: 'Stream any application to this streaming service easily',
+const pokemonDashboard: ProjectBlockProps = {
+	mainImg: pokemonDashboardImg,
+	title: 'Pokemon Dashboard',
+	description:
+		'Search for your favorite pokemon, and be presented with pokemon information ' +
+		'such as: base stats, type(s), height, weight and even hidden abilities. Check out their ' +
+		'special forms and evolutions fast all in one spot.',
 	links: [
 		{
+			title: 'Website Link',
+			href: 'https://justinstephenson.github.io/Pokemon_Dashboard',
+		},
+		{
 			title: 'Github Link',
-			href: 'https://github.com/JustinStephenson/Streaming_App',
+			href: 'https://github.com/JustinStephenson/Pokemon_Dashboard',
 		},
 	],
 	icons: [
@@ -28,11 +35,15 @@ const streamApp: ProjectBlockProps = {
 		},
 		{
 			isImg: false,
-			location: 'devicon-javascript-plain colored',
+			location: 'devicon-typescript-plain colored',
 		},
 		{
 			isImg: false,
 			location: 'devicon-html5-plain-wordmark colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-sass-original colored colored',
 		},
 		{
 			isImg: false,
@@ -124,7 +135,7 @@ const aerialInvasion: ProjectBlockProps = {
 export const Projects = (): JSX.Element => {
 	return (
 		<React.Fragment>
-			<ProjectBlock {...streamApp} />
+			<ProjectBlock {...pokemonDashboard} />
 			<ProjectBlock {...cropShop} />
 			<ProjectBlock {...primeDefense} />
 			<ProjectBlock {...aerialInvasion} />
