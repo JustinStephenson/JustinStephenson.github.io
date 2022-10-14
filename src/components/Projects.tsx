@@ -11,9 +11,9 @@ const pokemonDashboard: ProjectBlockProps = {
 	mainImg: pokemonDashboardImg,
 	title: 'Pokemon Dashboard',
 	description:
-		'Search for your favorite pokemon, and be presented with pokemon information ' +
-		'such as: base stats, type(s), height, weight and even hidden abilities. Check out their ' +
-		'special forms and evolutions fast all in one spot.',
+		'Search for your favorite pokemon and be presented with pokemon information ' +
+		'such as: base stats, type(s), height, weight, and even hidden abilities. Check out their ' +
+		'special forms and evolutions all in one spot.',
 	links: [
 		{
 			title: 'Website Link',
