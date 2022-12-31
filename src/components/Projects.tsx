@@ -1,5 +1,6 @@
 import { ProjectBlock, ProjectBlockProps } from './ProjectBlock';
 import pokemonDashboardImg from '../images/PokemonDashboard.png';
+import rpsReactImg from '../images/RpsReact.png';
 import cropShopImg from '../images/CropShopPhone.png';
 import primDefenseImg from '../images/PrimeDefensePhone.png';
 import aerialInvasionImg from '../images/AreialInvasionPhone.png';
@@ -48,6 +49,55 @@ const pokemonDashboard: ProjectBlockProps = {
 		{
 			isImg: false,
 			location: 'devicon-css3-plain-wordmark colored',
+		},
+	],
+};
+
+const rpsReact: ProjectBlockProps = {
+	mainImg: rpsReactImg,
+	title: 'Rock Paper Scissors',
+	description:
+		'A simple rock paper scissors game against a computer opponent. ' +
+		'Utilizes gitlab to leverage CI/CD, configured to run black box tests and deploy ' +
+		'on every successful merge.',
+	links: [
+		{
+			title: 'Website Link',
+			href: 'https://justinstephenson.github.io/Rock-Paper-Scissors-React',
+		},
+		{
+			title: 'Github Link',
+			href: 'https://github.com/JustinStephenson/Rock-Paper-Scissors-React',
+		},
+		{
+			title: 'Gitlab Link',
+			href: 'https://gitlab.com/justinstephenson/Rock-Paper-Scissors-React',
+		},
+	],
+	icons: [
+		{
+			isImg: false,
+			location: 'devicon-react-original colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-gitlab-plain-wordmark colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-typescript-plain colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-jest-plain colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-html5-plain-wordmark colored',
+		},
+		{
+			isImg: false,
+			location: 'devicon-sass-original colored colored',
 		},
 	],
 };
@@ -136,6 +186,7 @@ export const Projects = (): JSX.Element => {
 	return (
 		<React.Fragment>
 			<ProjectBlock {...pokemonDashboard} />
+			<ProjectBlock {...rpsReact} />
 			<ProjectBlock {...cropShop} />
 			<ProjectBlock {...primeDefense} />
 			<ProjectBlock {...aerialInvasion} />

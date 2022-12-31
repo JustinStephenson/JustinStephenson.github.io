@@ -1,165 +1,168 @@
-h1, h2, h3, h4, h5{
-    color:#202020 !important;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #202020 !important;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    font-size: 40px;
+	font-size: 40px;
 }
 
 h3 {
-    font-size: 30px;
+	font-size: 30px;
 }
 
 h5 {
-    font-size: 15px;
+	font-size: 15px;
 }
 
 p {
-    color: #202020;
-    font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
+	color: #202020;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
-    color: blue;
-    text-decoration: none;
- }
-
-.image-hover {
-    background: none;
-    text-decoration: none;
-    padding: 20px;
+	color: blue;
+	text-decoration: none;
 }
 
-.image-hover:hover{
-    background: rgba(140, 140, 140, 0.8);;
+.image-hover {
+	background: none;
+	text-decoration: none;
+	padding: 20px;
+}
+
+.image-hover:hover {
+	background: rgba(160, 160, 160, 0.8);
 }
 
 .profile-pic {
-    box-shadow: 0px 4px 6px 2px rgba(140, 140, 140, 0.8);;
-  border-radius: 50%
+	box-shadow: 0px 5px 6px 2px rgba(160, 160, 160, 0.8);
+	border-radius: 50%;
 }
 
 .m-t-1 {
-    margin-top:1em;
+	margin-top: 1em;
 }
 
 .p-t-1 {
-    padding-top:1em;
+	padding-top: 1em;
 }
 
-
 .about-me {
-    margin-top:25px;
+	margin-top: 25px;
 }
 
 .navbar-default {
-    background-color: #C9ADA7;
-    background: none;
-    border: none;
-    border-radius:0;
+	background-color: #c9ada7;
+	background: none;
+	border: none;
+	border-radius: 0;
 }
 
 .repo-row {
-    padding: 65px 10px;
-    display: flex;
-    justify-content: center;
+	padding: 65px 10px;
+	display: flex;
+	justify-content: center;
 }
 
 .repo-row:nth-child(odd) {
-  background-color: rgba(140, 140, 140, 0.8);
-  -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+	background-color: rgba(160, 160, 160, 0.8);
+	-webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+	clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
 
 .vertical-align {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @media (max-width: 991px) {
-    .row.vertical-align {
-        display: block; /* Turn off the flexible box layout */
-    }
+	.row.vertical-align {
+		display: block; /* Turn off the flexible box layout */
+	}
 }
 
 @media only screen and (max-width: 950px) {
-    .descriptions {
-       padding-top: 10%;
-    }
- }
+	.descriptions {
+		padding-top: 10%;
+	}
+}
 
 .work-item-img {
-    max-height: 480px;
-    max-width:80%;
+	max-height: 480px;
+	max-width: 80%;
 }
 
 .row-footer {
-/*	background-color: lightgrey;
+	/*	background-color: lightgrey;
     -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);
     clip-path: polygon(0 0%, 100% 4%, 100% 100%, 0% 100%);*/
-    padding: 65px 10px;
+	padding: 65px 10px;
 }
 
 .linkedin-btn {
-    width:140px;
-    box-shadow: 0px 2px 5px 1px lightgrey;
-    padding: 12px;
-    border-radius: 5px;
+	width: 140px;
+	box-shadow: 0px 2px 5px 1px lightgrey;
+	padding: 12px;
+	border-radius: 5px;
 }
 
 .btn-launch {
-    width:100%;
-    max-width:300px;
-    background-color: #549657;
-    color:white;
-    box-shadow: 0px 2px 5px 1px darkgrey;
+	width: 100%;
+	max-width: 300px;
+	background-color: #549657;
+	color: white;
+	box-shadow: 0px 2px 5px 1px darkgrey;
 }
 
 .btn-launch:hover,
 .btn-launch:focus {
-    color: white;
-    background: #3d7140;
+	color: white;
+	background: #3d7140;
 }
 
 .techUsed {
-    font-size:54px;
-    padding: 40px 0 0;
+	font-size: 54px;
+	padding: 40px 0 0;
 }
 
 .name {
-    font-size:56px;
-    padding: 15px 0 0;
+	font-size: 56px;
+	padding: 15px 0 0;
 }
 
 .techUsed i {
-    margin:0 20px;
+	margin: 0 20px;
 }
 
 .toolsUsed {
-    font-size: 100px;
-  padding: 40px 0;
+	font-size: 100px;
+	padding: 40px 0;
 }
 
 .toolsUsed i {
-    margin:0 15px;
+	margin: 0 15px;
 }
 
 .about {
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 
 .btn {
-    margin-bottom: -15px;
+	margin-bottom: -15px;
 }
 
 .horizontal-list {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
