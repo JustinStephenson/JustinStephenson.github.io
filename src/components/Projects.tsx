@@ -4,9 +4,8 @@ import rpsReactImg from '../images/RpsReact.png';
 import cropShopImg from '../images/CropShopPhone.png';
 import primDefenseImg from '../images/PrimeDefensePhone.png';
 import aerialInvasionImg from '../images/AreialInvasionPhone.png';
-import reduxImg from '../images/Redux.png';
-import unityImg from '../images/Unity.png';
 import React from 'react';
+import { icon } from '../utils/icons';
 
 const pokemonDashboard: ProjectBlockProps = {
 	mainImg: pokemonDashboardImg,
@@ -26,30 +25,12 @@ const pokemonDashboard: ProjectBlockProps = {
 		},
 	],
 	icons: [
-		{
-			isImg: false,
-			location: 'devicon-react-original colored',
-		},
-		{
-			isImg: true,
-			location: reduxImg,
-		},
-		{
-			isImg: false,
-			location: 'devicon-typescript-plain colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-html5-plain-wordmark colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-sass-original colored colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-css3-plain-wordmark colored',
-		},
+		icon['React'],
+		icon['Redux'],
+		icon['Typescript'],
+		icon['Html'],
+		icon['Sass'],
+		icon['Css'],
 	],
 };
 
@@ -75,30 +56,12 @@ const rpsReact: ProjectBlockProps = {
 		},
 	],
 	icons: [
-		{
-			isImg: false,
-			location: 'devicon-react-original colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-gitlab-plain-wordmark colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-typescript-plain colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-jest-plain colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-html5-plain-wordmark colored',
-		},
-		{
-			isImg: false,
-			location: 'devicon-sass-original colored colored',
-		},
+		icon['React'],
+		icon['Gitlab'],
+		icon['Typescript'],
+		icon['Jest'],
+		icon['Html'],
+		icon['Sass'],
 	],
 };
 
@@ -114,16 +77,7 @@ const cropShop: ProjectBlockProps = {
 			href: 'https://github.com/JustinStephenson/Crop_Shop',
 		},
 	],
-	icons: [
-		{
-			isImg: false,
-			location: 'devicon-csharp-plain-wordmark colored',
-		},
-		{
-			isImg: true,
-			location: unityImg,
-		},
-	],
+	icons: [icon['Csharp'], icon['Unity']],
 };
 
 const primeDefense: ProjectBlockProps = {
@@ -142,16 +96,7 @@ const primeDefense: ProjectBlockProps = {
 			href: 'https://github.com/JustinStephenson/Prime_Defence',
 		},
 	],
-	icons: [
-		{
-			isImg: false,
-			location: 'devicon-csharp-plain-wordmark colored',
-		},
-		{
-			isImg: true,
-			location: unityImg,
-		},
-	],
+	icons: [icon['Csharp'], icon['Unity']],
 };
 
 const aerialInvasion: ProjectBlockProps = {
@@ -170,16 +115,7 @@ const aerialInvasion: ProjectBlockProps = {
 			href: 'https://github.com/JustinStephenson/Aerial_Invasion',
 		},
 	],
-	icons: [
-		{
-			isImg: false,
-			location: 'devicon-csharp-plain-wordmark colored',
-		},
-		{
-			isImg: true,
-			location: unityImg,
-		},
-	],
+	icons: [icon['Csharp'], icon['Unity']],
 };
 
 export const Projects = (): JSX.Element => {

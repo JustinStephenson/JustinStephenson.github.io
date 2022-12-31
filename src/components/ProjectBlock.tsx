@@ -1,3 +1,4 @@
+import React from 'react';
 import '../App.css';
 
 interface Link {
@@ -5,9 +6,10 @@ interface Link {
 	href: string;
 }
 
-interface Icon {
+export interface Icon {
 	isImg: boolean;
 	location: string;
+	hoverMsg: string;
 }
 
 export interface ProjectBlockProps {
@@ -35,17 +37,20 @@ export const ProjectBlock = (props: ProjectBlockProps): JSX.Element => {
 	const renderIcons = (icons: Icon[]): JSX.Element[] => {
 		return icons.map((icon) => {
 			return (
-				<div key={icon.location}>
-					{icon.isImg ? (
-						<img
-							src={icon.location}
-							alt="location"
-							style={{ paddingLeft: 15, paddingRight: 15 }}
-						/>
-					) : (
-						<i className={icon.location}></i>
-					)}
-				</div>
+				<React.Fragment key={icon.location}>
+					<div className="icon-container">
+						<p className="icon-hover">{icon.hoverMsg}</p>
+						{icon.isImg ? (
+							<img
+								src={icon.location}
+								alt="location"
+								style={{ paddingLeft: 15, paddingRight: 15 }}
+							/>
+						) : (
+							<i className={icon.location}></i>
+						)}
+					</div>
+				</React.Fragment>
 			);
 		});
 	};

@@ -166,3 +166,22 @@ a {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+.icon-container {
+	position: relative;
+}
+
+.icon-container:hover .icon-hover {
+	display: block;
+}
+
+.icon-hover {
+	position: absolute;
+	top: -17px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 15px;
+	font-weight: bold;
+	width: max-content;
+	display: none;
+}
